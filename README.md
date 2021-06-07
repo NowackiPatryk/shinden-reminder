@@ -6,7 +6,7 @@ It's app I made mainly for fun but i decided to public it. With this extension y
 npm run dev to create a dev build<br/>
 npm run build to create build<br/><br/>
 
-#Installation<br/><br/>
+# Installation<br/><br/>
 Add packed extension to your chrome on developer mode
 
 

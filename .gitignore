@@ -1,0 +1,15 @@
+# IDE
+.vscode
+
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Backpack build
+dist
+extension.zip
+
+*.png
+node_modules

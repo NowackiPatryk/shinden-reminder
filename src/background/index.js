@@ -17,7 +17,6 @@ class Main {
         console.log('Starting');
         await this.setMainTab();
         await this.getSubscribedSeries();
-        //this.currentSeries[0].endedEpisodes = 4;
         await this.updateSeriesInfo();
         await this.returnToStartPage();
     }

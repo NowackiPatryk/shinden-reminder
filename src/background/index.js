@@ -40,9 +40,7 @@ class Main {
     async getSubscribedSeries() {
         return new Promise(resolve => {
             chrome.storage.local.get(['series'], value => {
-                console.log(value, 'asd');
                 this.currentSeries = JSON.parse(value.series);
-                console.log('got Value', value);
                 resolve();
             });
         });
@@ -52,7 +50,6 @@ class Main {
         const updatedSeries = [];
         for (const currentSerie of this.currentSeries) {
             const endedEpisodes = await this.getSerieInfo(currentSerie);
-            //const serie = this.currentSeries.filter(serie => currentSerie.id === serie.id);
             let shouldNotify = currentSerie.shouldNotify;
 
             if (!shouldNotify)
